@@ -89,7 +89,7 @@ class Movie {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
     else{
-      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+      return 'https://talleraltazor.com/wp-content/plugins/learnpress/assets/images/no-image.png';
     }
 
 

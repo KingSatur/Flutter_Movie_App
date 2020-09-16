@@ -67,6 +67,16 @@ class MovieProvider {
 
   }
 
+    Future<List<Movie>> getPeliculaByQuery(String query) async{
+    final url = Uri.https(_url, '3/search/movie', {
+      "api_key":_apikey,
+      "language":_lenguage,
+      "query":query
+    });
+
+    return await _procesarRespuesta(url);
+  }
+
   Future<List<Movie>> getPopular() async{
       
     if(_cargando) return [];
